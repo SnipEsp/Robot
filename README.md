@@ -1,6 +1,6 @@
 # Tarea: Robot
 ## Profesor: José Ramón Jiménez Reyes
-## Alumno:
+## Alumno: Juan David Fernández García
 
 La tarea va a consistir en modelar el movimiento de un robot por una zona de nuestra habitación.
 
