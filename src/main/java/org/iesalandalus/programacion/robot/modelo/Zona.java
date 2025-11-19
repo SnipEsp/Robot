@@ -2,9 +2,9 @@ package org.iesalandalus.programacion.robot.modelo;
 
 
 public record Zona(int ancho, int alto) {
-    public static final int ANCHO_MINIMO = 0;
+    public static final int ANCHO_MINIMO = 10;
     public static final int ANCHO_MAXIMO = 100;
-    public static final int ALTO_MINIMO = 0;
+    public static final int ALTO_MINIMO = 10;
     public static final int ALTO_MAXIMO = 100;
 
     public Zona {
@@ -13,22 +13,22 @@ public record Zona(int ancho, int alto) {
     }
 
     public Zona() {
-        this(ALTO_MINIMO, ANCHO_MINIMO);
+        this(ANCHO_MINIMO, ALTO_MINIMO);
     }
 
     public void validarAlto(int alto) {
         if (alto < ALTO_MINIMO) {
-            throw new IllegalArgumentException("El valor de la y es mayor que el mínimo permitido");
+            throw new RobotExcepcion("Alto no válido.");
         } else if (alto > ALTO_MAXIMO) {
-            throw new IllegalArgumentException("El valor de la y es mayor que el máximo permitido");
+            throw new RobotExcepcion("Alto no válido.");
         }
     }
 
     public void validarAncho(int ancho) {
         if (ancho < ANCHO_MINIMO) {
-            throw new IllegalArgumentException("El valor de la x es menor que el mínimo permitido");
+            throw new RobotExcepcion("Ancho no válido.");
         } else if (ancho > ANCHO_MAXIMO) {
-            throw new IllegalArgumentException("El valor de x es mayor que el máximo permitido");
+            throw new RobotExcepcion("Ancho no válido.");
         }
     }
 
@@ -39,16 +39,18 @@ public record Zona(int ancho, int alto) {
     }
 
     public boolean pertenece(Coordenada coordenada) {
+        if (coordenada == null) {
+            throw new NullPointerException("La coordenada no puede ser nula.");
+        }
         return perteneceX(coordenada.x()) && perteneceY(coordenada.y());
     }
 
     private boolean perteneceX(int x) {
-        return x >= ANCHO_MINIMO && x <= ANCHO_MAXIMO;
+        return x >= 0 && x < ancho;
     }
 
     private boolean perteneceY(int y) {
-        return y >= ALTO_MINIMO && y <= ALTO_MAXIMO;
+        return y >= 0 && y < alto;
     }
-
 
 }
