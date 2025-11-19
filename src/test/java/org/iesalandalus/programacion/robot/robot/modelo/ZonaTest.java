@@ -1,5 +1,7 @@
-package org.iesalandalus.programacion.robot.modelo;
+package org.iesalandalus.programacion.robot.robot.modelo;
 
+import org.iesalandalus.programacion.robot.modelo.Coordenada;
+import org.iesalandalus.programacion.robot.modelo.Zona;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,7 +15,7 @@ import static org.mockito.Mockito.when;
 class ZonaTest {
 
     @Test
-    void constructorPorDefectoCreaZonaConAndhoYAltoMinimos() {
+    void constructorPorDefectoCreaZonaConAnchoYAltoMinimos() {
         Zona zona = new Zona();
         assertEquals(10, zona.ancho());
         assertEquals(10, zona.alto());
@@ -21,7 +23,7 @@ class ZonaTest {
 
     @ParameterizedTest(name = "Cuando llamamos al constructor con valores {0}, {1} crea la zona correctamente")
     @CsvSource({"10, 10", "30, 20", "20, 30", "10, 100", "100, 10", "100, 100"})
-    void constructorConParmetrosValidosCreaZona(int ancho, int alto) {
+    void constructorConParametrosValidosCreaZona(int ancho, int alto) {
         Zona zona = new Zona(ancho, alto);
         assertEquals(ancho, zona.ancho());
         assertEquals(alto, zona.alto());

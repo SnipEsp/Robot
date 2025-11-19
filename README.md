@@ -13,7 +13,7 @@ La posición del robot vendrá expresa por sus coordenadas dentro de la zona, es
 
 <div align="center">
 <p>
-<img alt="Zona por defecto" src="src/main/resources/imagenes/Robot.png" />
+<img alt="org.iesalandalus.programacion.robot.modelo.Zona por defecto" src="src/main/resources/imagenes/Robot.png" />
 </p>
 </div>
 
@@ -57,9 +57,9 @@ Para ello te pongo un diagrama de clases para el mismo y poco a poco te iré exp
 1. Crea el registro `Coordenada` tal y como se indica en el diagrama. 
 2. Comprueba que pasa los tests y realiza un commit.
 
-#### Registro `Zona`
+#### Registro `org.iesalandalus.programacion.robot.modelo.Zona`
 
-1. Crea el registro `Zona`. 
+1. Crea el registro `org.iesalandalus.programacion.robot.modelo.Zona`. 
 2. Debes añadirle las constantes que se muestran y en el **constructor canónico** debes validar el ancho y el alto, utilizando los métodos expuestos en el diagrama.
 3. Debes añadir un **constructor por defecto** que cree la zona mínima.
 4. Debes añadir un método para comprobar si una coordenada pertenece a la zona o no, que se apoyará en los métodos mostrados en el diagrama.

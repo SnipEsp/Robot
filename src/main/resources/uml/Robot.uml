@@ -25,7 +25,7 @@
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_aHAV8IUuEe6MC-yrh3G8mA" name="vista">
-                <packagedElement xmi:type="uml:Class" xmi:id="_aHNKQIUuEe6MC-yrh3G8mA" name="Zona"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_aHNKQIUuEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot.modelo.Zona"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_aHZXgIUuEe6MC-yrh3G8mA" name="Orientacion"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_aHe3EYUuEe6MC-yrh3G8mA" name="Coordenada"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_aHmy4IUuEe6MC-yrh3G8mA" name="ControladorRobot"/>
@@ -215,7 +215,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HtluoIUuEe6MC-yrh3G8mA" name="Robot" specification="_HtXsMIUuEe6MC-yrh3G8mA">
             <language>JAVA</language>
             <body>
-    zona = new Zona();
+    zona = new org.iesalandalus.programacion.robot.modelo.Zona();
     coordenada = zona.getCentro();
     orientacion = Orientacion.NORTE;
 </body>
@@ -460,7 +460,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m_2JQIUxEe6MC-yrh3G8mA" value="1"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_gTBowIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public">
+        <packagedElement xmi:type="uml:Class" xmi:id="_gTBowIUtEe6lAqwTcRpJlQ" name="org.iesalandalus.programacion.robot.modelo.Zona" visibility="public">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gTEFAIUtEe6lAqwTcRpJlQ" name="ANCHO_MINIMO" visibility="public" isLeaf="true" isStatic="true" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false">
             <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gTFTIIUtEe6lAqwTcRpJlQ" name="defaultValue">
               <language>JAVA</language>
@@ -487,14 +487,14 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gTQ5UIUtEe6lAqwTcRpJlQ" name="ancho" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gTSHcIUtEe6lAqwTcRpJlQ" name="alto" visibility="private" type="_NXekwIUtEe6lAqwTcRpJlQ" isUnique="false"/>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbJqAIUtEe6lAqwTcRpJlQ" name="Zona" specification="_gTb4cIUtEe6lAqwTcRpJlQ">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbJqAIUtEe6lAqwTcRpJlQ" name="org.iesalandalus.programacion.robot.modelo.Zona" specification="_gTb4cIUtEe6lAqwTcRpJlQ">
             <language>JAVA</language>
             <body>
     validarAncho(ancho);
     validarAlto(alto);
 </body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbeaIIUtEe6lAqwTcRpJlQ" name="Zona" specification="_gbQXsIUtEe6lAqwTcRpJlQ">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gbeaIIUtEe6lAqwTcRpJlQ" name="org.iesalandalus.programacion.robot.modelo.Zona" specification="_gbQXsIUtEe6lAqwTcRpJlQ">
             <language>JAVA</language>
             <body>
     this(ANCHO_MINIMO, ALTO_MINIMO);
@@ -541,11 +541,11 @@
     return (y >= 0) &amp;&amp; (y &lt;= this.alto);
 </body>
           </ownedBehavior>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_gTb4cIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public" method="_gbJqAIUtEe6lAqwTcRpJlQ">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gTb4cIUtEe6lAqwTcRpJlQ" name="org.iesalandalus.programacion.robot.modelo.Zona" visibility="public" method="_gbJqAIUtEe6lAqwTcRpJlQ">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_gax2kIUtEe6lAqwTcRpJlQ" name="ancho" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_ga2vEIUtEe6lAqwTcRpJlQ" name="alto" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_gbQXsIUtEe6lAqwTcRpJlQ" name="Zona" visibility="public" method="_gbeaIIUtEe6lAqwTcRpJlQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gbQXsIUtEe6lAqwTcRpJlQ" name="org.iesalandalus.programacion.robot.modelo.Zona" visibility="public" method="_gbeaIIUtEe6lAqwTcRpJlQ"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_gbjSoIUtEe6lAqwTcRpJlQ" name="validarAncho" visibility="private" method="_gbpZQIUtEe6lAqwTcRpJlQ">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_gblu4IUtEe6lAqwTcRpJlQ" name="ancho" type="_NXekwIUtEe6lAqwTcRpJlQ"/>
           </ownedOperation>
@@ -606,14 +606,14 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_aHW7QIUuEe6MC-yrh3G8mA" name="elegirZona" specification="_aHMjMIUuEe6MC-yrh3G8mA">
             <language>JAVA</language>
             <body>
-    Zona zona = null;
+    org.iesalandalus.programacion.robot.modelo.Zona zona = null;
     do {
         System.out.print(&quot;Indica el ancho de la zona: &quot;);
         int ancho = Entrada.entero();
         System.out.print(&quot;Indica el alto de la zona: &quot;);
         int alto = Entrada.entero();
         try {
-            zona = new Zona(ancho, alto);
+            zona = new org.iesalandalus.programacion.robot.modelo.Zona(ancho, alto);
         } catch (IllegalArgumentException iae) {
             System.out.println(&quot;ERROR: &quot; + iae.getMessage());
         }
@@ -763,7 +763,7 @@
   <Codegen:External xmi:id="_gcDB4IUtEe6lAqwTcRpJlQ" name="Coordenada" base_Classifier="_NWwMAIUtEe6lAqwTcRpJlQ"/>
   <Codegen:External xmi:id="_lLpkkIUtEe6lAqwTcRpJlQ" name="java.lang.String" base_Classifier="_lLkFAYUtEe6lAqwTcRpJlQ"/>
   <standard:Create xmi:id="_lLw5UIUtEe6lAqwTcRpJlQ" base_BehavioralFeature="_lLsn4IUtEe6lAqwTcRpJlQ"/>
-  <Codegen:External xmi:id="_HtC8EIUuEe6MC-yrh3G8mA" name="Zona" base_Classifier="_gTBowIUtEe6lAqwTcRpJlQ"/>
+  <Codegen:External xmi:id="_HtC8EIUuEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot.modelo.Zona" base_Classifier="_gTBowIUtEe6lAqwTcRpJlQ"/>
   <Codegen:External xmi:id="_HtUo4IUuEe6MC-yrh3G8mA" name="Orientacion" base_Classifier="_lLa7EIUtEe6lAqwTcRpJlQ"/>
   <standard:Create xmi:id="_HteZ4IUuEe6MC-yrh3G8mA" base_BehavioralFeature="_HtXsMIUuEe6MC-yrh3G8mA"/>
   <standard:Create xmi:id="_Htyi8IUuEe6MC-yrh3G8mA" base_BehavioralFeature="_HtrOMIUuEe6MC-yrh3G8mA"/>
@@ -774,7 +774,7 @@
   <Codegen:External xmi:id="_HwU5kIUuEe6MC-yrh3G8mA" name="java.lang.Object" base_Classifier="_HwQoIIUuEe6MC-yrh3G8mA"/>
   <standard:Create xmi:id="_RTD0EIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_RTAJsIUuEe6MC-yrh3G8mA"/>
   <standard:Create xmi:id="_aHF1gIUuEe6MC-yrh3G8mA" base_BehavioralFeature="_aHCLIIUuEe6MC-yrh3G8mA"/>
-  <Codegen:External xmi:id="_aHVGEIUuEe6MC-yrh3G8mA" name="Zona" base_Classifier="_aHNKQIUuEe6MC-yrh3G8mA"/>
+  <Codegen:External xmi:id="_aHVGEIUuEe6MC-yrh3G8mA" name="org.iesalandalus.programacion.robot.modelo.Zona" base_Classifier="_aHNKQIUuEe6MC-yrh3G8mA"/>
   <Codegen:External xmi:id="_aHca0IUuEe6MC-yrh3G8mA" name="Orientacion" base_Classifier="_aHZXgIUuEe6MC-yrh3G8mA"/>
   <Codegen:External xmi:id="_aHihcIUuEe6MC-yrh3G8mA" name="Coordenada" base_Classifier="_aHe3EYUuEe6MC-yrh3G8mA"/>
   <Codegen:External xmi:id="_aHp2MIUuEe6MC-yrh3G8mA" name="ControladorRobot" base_Classifier="_aHmy4IUuEe6MC-yrh3G8mA"/>

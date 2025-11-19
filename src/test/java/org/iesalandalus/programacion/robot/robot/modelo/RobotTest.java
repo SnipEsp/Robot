@@ -1,11 +1,15 @@
-package org.iesalandalus.programacion.robot.modelo;
+package org.iesalandalus.programacion.robot.robot.modelo;
 
+import org.iesalandalus.programacion.robot.modelo.Coordenada;
+import org.iesalandalus.programacion.robot.modelo.Zona;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import javax.naming.OperationNotSupportedException;
+
+import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;

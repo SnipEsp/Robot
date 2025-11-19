@@ -1,5 +1,6 @@
-package org.iesalandalus.programacion.robot.modelo;
+package org.iesalandalus.programacion.robot.robot.modelo;
 
+import org.iesalandalus.programacion.robot.modelo.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
